@@ -1,0 +1,148 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4323,        138]
+NotebookOptionsPosition[      3487,        114]
+NotebookOutlinePosition[      3895,        130]
+CellTagsIndexPosition[      3852,        127]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\<\
+Ingen fil har valtsIngen fil har valts
+4.1 Box-counting dimension\
+\>", "Title",
+ CellChangeTimes->{
+  3.8801696517521687`*^9},ExpressionUUID->"d4b83533-2b10-4360-b827-\
+6a21e2b27b0e"],
+
+Cell[CellGroupData[{
+
+Cell["a)", "Subsubsection",
+ CellChangeTimes->{{3.880169673862023*^9, 
+  3.8801696745049977`*^9}},ExpressionUUID->"db5a161d-0b21-42b2-9889-\
+2064debbf2f4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+   "Define", " ", "the", " ", "object", " ", "and", " ", "determine", " ", 
+    "its", " ", "size", " ", "at", " ", "different", " ", "scales"}], "*)"}], 
+  RowBox[{
+   RowBox[{
+    RowBox[{"object", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"1", ",", "2"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"3", ",", "4"}], "}"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"5", ",", "6"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"7", ",", "8"}], "}"}]}], "}"}]}], "}"}]}], ";", 
+    RowBox[{"scaleFactor", "=", "3"}], ";", 
+    RowBox[{"(*", 
+     RowBox[{"Count", " ", "the", " ", "number", " ", "of", " ", "boxes"}], 
+     "*)"}], 
+    RowBox[{"numBoxes", "=", 
+     RowBox[{
+      RowBox[{"Length", "[", "object", "]"}], "*", 
+      RowBox[{"Length", "[", "object", "]"}]}]}], ";"}], "\n", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{
+     "Calculate", " ", "the", " ", "dimension", " ", "using", " ", "the", " ", 
+      RowBox[{"formula", ":", "dimension"}]}], "=", 
+     RowBox[{"log", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"number", " ", "of", " ", "boxes"}], ")"}], "/", "log"}], 
+      RowBox[{"(", 
+       RowBox[{"scale", " ", "factor"}], ")"}]}]}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"dimension", "=", 
+     RowBox[{
+      RowBox[{"Log", "[", "numBoxes", "]"}], "/", 
+      RowBox[{"Log", "[", "scaleFactor", "]"}]}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"Print", " ", "the", " ", "result"}], "*)"}], "\n", 
+   RowBox[{"Print", "[", "dimension", "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.8801715883611975`*^9, 3.8801715883737497`*^9}, {
+  3.8801718070995483`*^9, 3.8801718844282293`*^9}, {3.880171943742494*^9, 
+  3.8801719777019844`*^9}},
+ CellLabel->"In[29]:=",ExpressionUUID->"329377e4-6d5d-40d1-a847-969116603bdf"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"Log", "[", "4", "]"}], 
+  RowBox[{"Log", "[", "3", "]"}]]], "Print",
+ CellChangeTimes->{3.880171978807576*^9},
+ CellLabel->
+  "During evaluation of \
+In[29]:=",ExpressionUUID->"f53165fa-49eb-4ff9-8035-5f0bd171039a"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.880171840850624*^9, 
+  3.8801718418203373`*^9}},ExpressionUUID->"84ace016-471d-4f5b-a218-\
+a47a706c73e0"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{571.8, 524.4},
+WindowMargins->{{284.4, Automatic}, {12, Automatic}},
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (December 2, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"b62a7950-1f2b-4a29-9839-d37abb6b8b2f"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 194, 6, 284, "Title",ExpressionUUID->"d4b83533-2b10-4360-b827-6a21e2b27b0e"],
+Cell[CellGroupData[{
+Cell[799, 32, 155, 3, 45, "Subsubsection",ExpressionUUID->"db5a161d-0b21-42b2-9889-2064debbf2f4"],
+Cell[CellGroupData[{
+Cell[979, 39, 2054, 56, 238, "Input",ExpressionUUID->"329377e4-6d5d-40d1-a847-969116603bdf"],
+Cell[3036, 97, 254, 7, 41, "Print",ExpressionUUID->"f53165fa-49eb-4ff9-8035-5f0bd171039a"]
+}, Open  ]],
+Cell[3305, 107, 154, 3, 28, "Input",ExpressionUUID->"84ace016-471d-4f5b-a218-a47a706c73e0"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
